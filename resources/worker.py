@@ -8,7 +8,10 @@ from app import db
 from dbmodel import models
 
 class Worker(Thread):
-    
+    """Worker class will do all the heavy lifting. It will take in a global queue
+    from which it wil retrieve the tasks.
+    """
+
     def __init__(self, queue, lock, *arg, **kwargs):
         super(Worker, self).__init__(*arg, **kwargs)
         self.queue = queue

@@ -1,6 +1,9 @@
 from flask import Flask
 
 class App_Flask(Flask):
+    """This class is to override the origianl Flask class's run() method. Mainly
+    to take in extra arguments: server and lock.
+    """
 
     def __init__(self, *arg, **kwargs):
         super(App_Flask, self).__init__(*arg, **kwargs)

@@ -1,5 +1,6 @@
 """Custom Status.
 """
+
 class CustomStatus(Exception):
     """
     """

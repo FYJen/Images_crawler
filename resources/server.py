@@ -2,6 +2,9 @@ import config
 from Queue import Queue
 
 class Server(object):
+    """Server class is to handle global queue that is shared by all the children
+    threads. It also populates the queue.
+    """
 
     def __init__(self):
         self.queue = Queue(config.QUEUE_SIZE)

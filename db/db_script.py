@@ -1,3 +1,6 @@
+"""This is a custom db script that I wrote a while ago. This will handle creating,
+upgrating, downgrating, and generating db.
+"""
 import argparse
 import imp
 import sys
