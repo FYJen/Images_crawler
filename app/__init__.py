@@ -1,8 +1,8 @@
 import os
-from flask import Flask
+from resources.app_flask import App_Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
+app = App_Flask(__name__)
 
 DEV_CONFIG = 'env-config.Development'
 CONFIG_FILE = os.environ.get('PRODUCTION_CONFIG', DEV_CONFIG)
